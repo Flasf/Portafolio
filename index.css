@@ -1,0 +1,347 @@
+:root {
+    --color-background: #0d1b2a;
+
+    --color-bg-light: #f8f9fa;
+    --color-text-light: #0d1b2a;
+    --color-bg-dark: #0d1b2a;
+    --color-text-dark: #f8f9fa;
+}
+
+@font-face {
+    font-family: 'Nacelle';
+    src: url('assets/nacelle_100/Nacelle-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nacelle';
+    src: url('assets/nacelle_100/Nacelle-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+body {
+    font-family: 'Nacelle', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #0d1b2a;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header {
+    background-color: #00E2B4;
+    color: #0d1b2a;
+    text-align: center;
+    padding: 40px 0;
+}
+@keyframes fadeBorder {
+    0% {
+        border-color: #B2ABF2; /* Starting color */
+    }
+    50% {
+        border-color: #00E2B4; /* Midway color (fades to this) */
+    }
+    100% {
+        border-color: #B2ABF2; /* Back to starting color */
+    }
+}
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #B2ABF2;
+    animation: fadeBorder 3s infinite;
+}
+h1, h2 {
+    font-weight: bold;
+    margin: 10px 0;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.section {
+    
+    flex-basis: calc(100% - 20px);
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.skill {
+    background-color: #B2ABF2;
+    color: #0d1b2a;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+.timeline {
+    position: relative;
+    padding-left: 30px;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #00E2B4;
+}
+.timeline-item {
+    margin-bottom: 20px;
+    position: relative;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -34px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #00E2B4;
+}
+.timeline-item:hover {
+    transform: translateX(5px);
+    transition: transform 0.3s ease;
+}
+footer {
+    background-color: #0d1b2a;
+    color: #f8f9fa;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+.contact-icons {
+    font-size: 24px;
+    margin-top: 10px;
+}
+.contact-icons a {
+    color: #f8f9fa;
+    margin: 0 10px;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    .section {
+        flex-basis: 100%;
+    }
+}
+
+.more-info {
+    display: none; /* Hide the info by default */
+}
+
+.more-info-button {
+    cursor: pointer;
+    background-color: #B2ABF2;
+    color: #0d1b2a;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+.more-info-button:hover {
+    background-color: #00E2B4;
+}
+
+.more-info-button:active {
+    background-color: #aaa;
+}
+
+.more-info-button:focus {
+    outline: none;
+}
+
+.more-info-button:active + .more-info {
+    display: block;
+}
+
+#clock {
+    font-size: 2em;
+    font-weight: bold;
+    color: #0d1b2a;  
+}
+
+@keyframes blink-caret {
+    from { border-color: transparent; }
+    to { border-color: #0d1b2a; } 
+    /* 50% {
+        border-color: transparent;
+    } */
+}
+
+#typewriter-name, #typewriter-title {
+    font-family: 'Nacelle', sans-serif;
+    overflow: hidden; /* Ensures text doesn't spill out during animation */
+    display: inline-block; /*Basically makes the cursor appear right beside the text*/
+    white-space: nowrap; /* Ensures text appears in one line */
+    border-right: 2px solid; /* Creates the line for the blinking cursor effect */
+    animation: blink-caret 1s linear infinite; 
+}
+/* The cursor will stop blinking once the typing is done */
+.no-caret {
+    border-right: none;  /* Hide the blinking caret */
+}
+
+/* Keep the blinking effect for the second line... doesn't work lol */
+#typewriter-title {
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+/* Styles for the image gallery */
+.image-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.gallery-image {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-button {
+    background-color: #00E2B4;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.gallery-button:hover {
+    background-color: #00bfa3;
+}
+
+.gallery-description {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#resetButton {
+    cursor: pointer;
+    background-color: #B2ABF2;
+    color: #0d1b2a;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-dark);
+  }
+  
+  body.dark-mode .section {
+    background-color: #1b2838;
+    color: var(--color-text-dark);
+  }
+  
+  body.dark-mode header {
+    background-color: #00A884;
+  }
+  
+  body.dark-mode .skill {
+    background-color: #8A84D8;
+  }
+
+  body.dark-mode #clock {
+    color: var(--color-text-dark);
+  }
+  
+  /* Theme switch styles */
+  .theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+  }
+  
+  .theme-switch input {
+    display: none;
+  }
+  
+  .slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+  }
+  
+  input:checked + .slider {
+    background-color: #00E2B4;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    font-size: 18px;
+  }
+  
+  .icon:first-child {
+    left: 5px;
+  }
+  
+  .icon:last-child {
+    right: 5px;
+  }
+
+  /* End of dark mode styles */
