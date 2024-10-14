@@ -7,7 +7,8 @@ const projects = [
         description: 'Videojuego en el que se experimenta con la inversión de gravedad, interacción con diferentes objetos de colores, botones, placas de presión y parkour.',
         moreInfo: {
           text: 'Mi rol en este proyecto fue programar las interacciones entre el jugador y los objetos: agarrar un objeto, presionar un botón. Esto también incluye la creación y programación de las animaciones que se activan al interactuar con los objetos.',
-          team: ['Abdiel Baldonedo', 'Manuel Cabello', 'Douglas González', 'Sebastian Urbano']
+          team: ['Abdiel Baldonedo', 'Manuel Cabello', 'Douglas González', 'Sebastian Urbano'],
+          technologiesUsed: 'Unity, C#, Github'
         }
   
     },
@@ -17,7 +18,8 @@ const projects = [
         description: 'Juego de bartender en realidad virtual, sirviendo bebidas a diferentes clientes del bar.',
         moreInfo: {
           text: 'Mi rol en este proyecto fue importar el personaje que actuaría como cliente para el jugador, programar su ruta de movimiento y cómo interactuaba con las bebidas que crea el jugador. Del mismo modo, probé el videojuego con los visores Meta Quest 2 en busca de errores y feedback para el resto del equipo.',
-          team: ['Abdiel Baldonedo', 'Martín Cardoze', 'Alan Cruz', 'Sebastian Urbano']
+          team: ['Abdiel Baldonedo', 'Martín Cardoze', 'Alan Cruz', 'Sebastian Urbano'],
+          technologiesUsed: 'Unity, C#, Github, Blender, Canva'
         }
     },
   ];
@@ -32,12 +34,14 @@ const projects = [
     const moreInfoSection = document.getElementById("moreInfoSection");
     const moreInfoButton = document.getElementById("moreInfoButton");
     const teamList = document.getElementById("teamList");
+    const technologiesUsed = document.getElementById("technologiesUsed");
   
     const project = projects[currentProjectIndex];
   
     galleryImage.src = projects[currentProjectIndex].image;
     projectTitle.textContent = projects[currentProjectIndex].title;
     projectDescription.textContent = projects[currentProjectIndex].description;
+    technologiesUsed.textContent = "Tecnologías usadas: " + projects[currentProjectIndex].moreInfo.technologiesUsed;
   
     // Reset the "More Info" section to hidden when switching projects
     moreInfoSection.style.display = "none";
