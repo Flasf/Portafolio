@@ -37,6 +37,32 @@
   </nav>
 
   <main>
-
+    <div class="container">
+      <div class="content">
+        <div class="section">
+          <h2>Proyectos Destacados</h2>
+          <div class="image-gallery">
+              <button id="prevButton" class="gallery-button">❮ Prev</button>
+              
+              <!-- Image container that will show the projects -->
+              <img id="galleryImage" src="assets/Images/two-eyes.png" alt="Project Image" class="gallery-image">
+      
+              <button id="nextButton" class="gallery-button">Next ❯</button>
+          </div>
+      
+          <div class="gallery-description">
+              <p id="projectTitle">Two Eyes: Two Worlds</p>
+              <p id="projectDescription">Videojuego en el que se experimenta con la inversión de gravedad, interacción con diferentes objetos de colores, botones, placas de presión y parkour.</p>
+              <button id="moreInfoButton" class="more-info-button">Más información</button>
+                  <div id="moreInfoSection" class="more-info">
+                      <!-- More info content will be dynamically updated here -->
+                      <p id="moreInfoText">Mi rol en este proyecto fue programar las interacciones entre el jugador y los objetos: agarrar un objeto, presionar un botón. Esto también incluye la creación y programación de las animaciones que se activan al interactuar con los objetos.</p>
+                      <p>Los miembros del equipo fueron:</p>
+                      <ul id="teamList"></ul>
+                  </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
  </body>
