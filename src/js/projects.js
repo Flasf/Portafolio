@@ -2,7 +2,7 @@
 // Array of project data (images, titles, descriptions)
 const projects = [
     {
-        image: 'assets/Images/two-eyes.png',
+        image: 'src/assets/Images/two-eyes.png',
         title: 'Two Eyes: Two Worlds',
         description: 'Videojuego en el que se experimenta con la inversión de gravedad, interacción con diferentes objetos de colores, botones, placas de presión y parkour.',
         moreInfo: {
@@ -13,7 +13,7 @@ const projects = [
   
     },
     {
-        image: 'assets/Images/vrbar.png',
+        image: 'src/assets/Images/vrbar.png',
         title: 'VR Bar',
         description: 'Juego de bartender en realidad virtual, sirviendo bebidas a diferentes clientes del bar.',
         moreInfo: {
