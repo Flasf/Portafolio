@@ -118,7 +118,7 @@ window.onload = function() {
 // Array of project data (images, titles, descriptions)
 const projects = [
   {
-      image: 'assets/Images/two-eyes.png',
+      image: 'src/assets/Images/two-eyes.png',
       title: 'Two Eyes: Two Worlds',
       description: 'Videojuego en el que se experimenta con la inversión de gravedad, interacción con diferentes objetos de colores, botones, placas de presión y parkour.',
       moreInfo: {
@@ -128,7 +128,7 @@ const projects = [
 
   },
   {
-      image: 'assets/Images/vrbar.png',
+      image: 'src/assets/Images/vrbar.png',
       title: 'VR Bar',
       description: 'Juego de bartender en realidad virtual, sirviendo bebidas a diferentes clientes del bar.',
       moreInfo: {
@@ -195,28 +195,3 @@ document.getElementById("moreInfoButton").addEventListener("click", function() {
 // Initialize the gallery with the first project
 updateGallery();
 
-// Better Dark mode toggle
-const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-
-
-function switchTheme(e) {
-  if (e.target.checked) {
-    document.body.classList.add('dark-mode');
-    localStorage.setItem('theme', 'dark');
-  } else {
-    document.body.classList.remove('dark-mode');
-    localStorage.setItem('theme', 'light');
-  }    
-}
-
-toggleSwitch.addEventListener('change', switchTheme, false);
-
-// Check for saved user preference, if any, on load of the website
-const currentTheme = localStorage.getItem('theme');
-if (currentTheme) {
-  document.body.classList[currentTheme === 'dark' ? 'add' : 'remove']('dark-mode');
-
-  if (currentTheme === 'dark') {
-    toggleSwitch.checked = true;
-  }
-}

@@ -1,0 +1,82 @@
+<!--Galería de al menos 3 proyectos de videojuegos
+ • Cada proyecto debe incluir:
+ – Título del juego
+ – Descripción breve
+ – Imágenes o GIFs del juego
+ – Tecnologías utilizadas
+ – Su rol en el proyecto
+ – Enlace al juego o demo (si está disponible)
+
+ -->
+ <!DOCTYPE html>
+ <html lang="es">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Portafolio</title>
+     <link rel="stylesheet" href="src/css/index.css">
+     <script src="https://unpkg.com/feather-icons"></script>
+ </head>
+
+ <body>
+  <header>
+    <img src="src/Assets/Images/PhotoRoom-20230414_144009.png" alt="Abdiel Baldonedo" class="profile-img">
+    <br>
+    <h1 id="typewriter-name">Abdiel Javier Baldonedo Ramos</h1>  <!-- Placeholder for the typewriter effect on name -->
+    <br>
+    <h2 id="typewriter-title">Diseñador y Desarrollador de Videojuegos</h2>  <!-- Placeholder for the typewriter effect on title -->
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html"><i data-feather="home"></i> Inicio</a></li>
+      <li><a href="projects.html"><i data-feather="briefcase"></i> Proyectos</a></li>
+      <li><a href="contact.html"><i data-feather="mail"></i> Contacto</a></li>
+      <li><a href="about.html"><i data-feather="user"></i> Acerca de mi</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="theme-switch-wrapper">
+      <label class="theme-switch" for="checkbox">
+      <input type="checkbox" id="checkbox" />
+      <div class="slider round">
+          <span class="icon">🌙</span>
+          <span class="icon">☀️</span>
+      </div>
+      </label>
+    </div>
+
+    <div class="container">
+      <div class="content">
+        <div class="section">
+          <h2>Proyectos Destacados</h2>
+          <div class="image-gallery">
+              <button id="prevButton" class="gallery-button">❮ Prev</button>
+              
+              <!-- Image container that will show the projects -->
+              <img id="galleryImage" src="src/assets/Images/two-eyes.png" alt="Project Image" class="gallery-image">
+      
+              <button id="nextButton" class="gallery-button">Next ❯</button>
+          </div>
+      
+          <div class="gallery-description">
+              <p id="projectTitle">Two Eyes: Two Worlds</p>
+              <p id="projectDescription">Videojuego en el que se experimenta con la inversión de gravedad, interacción con diferentes objetos de colores, botones, placas de presión y parkour.</p>
+              <button id="moreInfoButton" class="more-info-button">Más información</button>
+                  <div id="moreInfoSection" class="more-info">
+                      <!-- More info content will be dynamically updated here -->
+                      <p id="moreInfoText">Mi rol en este proyecto fue programar las interacciones entre el jugador y los objetos: agarrar un objeto, presionar un botón. Esto también incluye la creación y programación de las animaciones que se activan al interactuar con los objetos.</p>
+                      <p>Los miembros del equipo fueron:</p>
+                      <ul id="teamList"></ul>
+                      <p id="technologiesUsed"></p>  <!-- Placeholder for the list of technologies used -->
+                  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="src/js/projects.js"></script>
+  <script src="src/js/darkmodetoggle.js"></script>
+ </body>
+ </html>

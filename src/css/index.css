@@ -345,3 +345,20 @@ body.dark-mode {
   }
 
   /* End of dark mode styles */
+
+  nav > ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 14px 16px;
+    overflow: hidden;
+    background-color: #098446;
+}
+
+li a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
