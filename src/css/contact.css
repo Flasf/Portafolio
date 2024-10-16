@@ -40,6 +40,7 @@
     font-size: 1rem;
     transition: border-color 0.3s ease;
     box-sizing: border-box; /* Prevents border overflow */
+    background-color: #ffffff;
   }
 
   .contact-form input[type="text"]:focus,
