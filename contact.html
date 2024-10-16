@@ -1,62 +1,85 @@
 <!--• Formulario de contacto (no es necesario que sea funcional)
  • Enlaces a perfiles profesionales (LinkedIn, GitHub, etc.)-->
- <!DOCTYPE html>
- <html lang="es">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Contact</title>
-     <link rel="stylesheet" href="src/css/index.css">
-     <script src="https://unpkg.com/feather-icons"></script>
- </head>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="src/css/index.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
 
- <body>
-  <header>
-    <img src="src/assets/Images/PhotoRoom-20230414_144009.png" alt="Abdiel Baldonedo" class="profile-img">
-    <br>
-    <h1 id="typewriter-name">Abdiel Javier Baldonedo Ramos</h1>  <!-- Placeholder for the typewriter effect on name -->
-    <br>
-    <h2 id="typewriter-title">Diseñador y Desarrollador de Videojuegos</h2>  <!-- Placeholder for the typewriter effect on title -->
-  </header>
+  <body>
+    <header>
+      <img
+        src="src/assets/Images/PhotoRoom-20230414_144009.png"
+        alt="Abdiel Baldonedo"
+        class="profile-img"
+      />
+      <br />
+      <!-- Placeholder for the typewriter effect on name -->
+      <h1 id="typewriter-name">Abdiel Javier Baldonedo Ramos</h1>
+      <br />
+      <!-- Placeholder for the typewriter effect on title -->
+      <h2 id="typewriter-title">Diseñador y Desarrollador de Videojuegos</h2>
+    </header>
 
-  <nav>
-    <ul>
-      <li><a href="index.html"><i data-feather="home"></i> Inicio</a></li>
-      <li><a href="projects.html"><i data-feather="briefcase"></i> Proyectos</a></li>
-      <li><a href="contact.html"><i data-feather="mail"></i> Contacto</a></li>
-      <li><a href="about.html"><i data-feather="user"></i> Acerca de mi</a></li>
-    </ul>
-  </nav>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html"><i data-feather="home"></i> Inicio</a>
+        </li>
+        <li>
+          <a href="projects.html"><i data-feather="briefcase"></i> Proyectos</a>
+        </li>
+        <li>
+          <a href="contact.html"><i data-feather="mail"></i> Contacto</a>
+        </li>
+        <li>
+          <a href="about.html"><i data-feather="user"></i> Acerca de mi</a>
+        </li>
+      </ul>
+    </nav>
 
-  <main>
-    <div class="container">
+    <main>
+      <div class="container">
         <div class="content">
-            <div class="section">
-                <form>
-                    <fieldset>
-                      <legend>Title:</legend> 
-                      <label for="name">Name</label><br /> 
-                      <input name="name" type="text" required> <br /> <label for="message">Message</label><br /> <textarea cols="30" name="message" rows="2"></textarea><br /> <button type="submit" value="Submit">Submit</button>
-                    </fieldset>
-                  </form>
-            </div>
+          <div class="section">
+            <form>
+              <fieldset>
+                <legend>Title:</legend>
+                <label for="name">Name</label><br/>
+                <input name="name" type="text" required /> <br/>
+                <label for="message">Message</label><br/>
+                <textarea cols="30" name="message" rows="2"></textarea><br/>
+                <button type="submit" value="Submit">Submit</button>
+              </fieldset>
+            </form>
+          </div>
         </div>
-    </div>
-  </main>
+      </div>
+    </main>
 
-  <footer>
-    <h2>Contacto</h2>
-    <p>Abdielr507@gmail.com | +507 6893-7833</p>
-    <p>Pedregal, Panamá</p>
-    <div class="contact-icons">
-        <a href="https://www.linkedin.com/in/abdiel-baldonedo-ramos/" target="_blank">🔗</a>
+    <footer>
+      <h2>Contacto</h2>
+      <p>Abdielr507@gmail.com | +507 6893-7833</p>
+      <p>Pedregal, Panamá</p>
+      <div class="contact-icons">
+        <a
+          href="https://www.linkedin.com/in/abdiel-baldonedo-ramos/" target="_blank">
+          <i data-feather="linkedin"></i>
+        </a>
         <a href="mailto:Abdielr507@gmail.com">✉️</a>
         <a href="tel:+50768937833">📞</a>
-        <a href="https://github.com/flasf" target="_blank"><i data-feather="github"></i></a>
-    </div>
-</footer>
-<script>
-  feather.replace();
-</script>
- </body>
- </html>
+        <a href="https://github.com/flasf" target="_blank">
+          <i data-feather="github"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
