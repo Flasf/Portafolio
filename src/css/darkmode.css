@@ -1,4 +1,12 @@
-  /* Dark mode styles */
+:root {
+  --color-background: #0d1b2a;
+
+  --color-bg-light: #f8f9fa;
+  --color-text-light: #0d1b2a;
+  --color-bg-dark: #0d1b2a;
+  --color-text-dark: #f8f9fa;
+}
+ /* Dark mode styles */
 body.dark-mode {
     background-color: var(--color-bg-dark);
     color: var(--color-text-dark);
@@ -21,13 +29,45 @@ body.dark-mode {
     color: var(--color-text-dark);
   }
   
-  body.dark-mode .contact-form input[type="text"],
-  .contact-form input[type="email"],
-  .contact-form textarea {
-    background-color: #1b2838;
+  body.dark-mode .timeline::before {
+    background-color: #00A884;
+}
+
+body.dark-mode .timeline-item::before {
+    background-color: #00A884;
+}
+
+body.dark-mode .more-info-button {
+    background-color: #8A84D8;
+    color: var(--color-bg-dark);
+}
+
+body.dark-mode .more-info-button:hover {
+    background-color: #00A884;
+}
+
+body.dark-mode .gallery-button {
+    background-color: #00A884;
+    color: var(--color-bg-dark);
+}
+
+body.dark-mode .gallery-button:hover {
+    background-color: #008c6e;
+}
+
+body.dark-mode #resetButton {
+    background-color: #8A84D8;
+    color: var(--color-bg-dark);
+}
+
+body.dark-mode nav > ul {
+    background-color: #076d3a;
+}
+
+body.dark-mode li a {
     color: var(--color-text-dark);
-    border-color: #00E2B4;
-  }
+}
+
   /* Theme switch styles */
   .theme-switch-wrapper {
     display: flex;
@@ -100,5 +140,51 @@ body.dark-mode {
     right: 5px;
   }
 
+
+  /* Contact form dark mode styles */
+body.dark-mode .contact-form {
+  background-color: #2c3e50;
+  color: var(--color-text-dark);
+}
+
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form textarea {
+  background-color: #34495e;
+  color: var(--color-text-dark);
+  border: 1px solid #7f8c8d;
+}
+
+body.dark-mode .contact-form input::placeholder,
+body.dark-mode .contact-form textarea::placeholder {
+  color: #bdc3c7;
+}
+
+body.dark-mode .contact-form label {
+  color: #ecf0f1; 
+}
+
+body.dark-mode .contact-form button {
+  background-color: #00A884;
+  color: #ecf0f1;
+}
+
+body.dark-mode legend {
+  color: var(--color-text-dark);
+}
+
+body.dark-mode .contact-form button:hover {
+  background-color: #00916e;
+}
+/* End of contact form dark mode styles */
+
+
+/* Contact icons dark mode styles */
+body.dark-mode .contact-icons a {
+  color: var(--color-text-dark);
+}
+
+body.dark-mode .contact-icons a:hover {
+  color: #00A884;
+}
 
   /* End of dark mode styles */
