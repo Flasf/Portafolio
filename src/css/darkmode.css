@@ -72,7 +72,6 @@ body.dark-mode li a {
   .theme-switch-wrapper {
     display: flex;
     align-items: center;
-    margin-top: 20px;
   }
   
   .theme-switch {
