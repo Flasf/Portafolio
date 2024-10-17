@@ -22,6 +22,16 @@ const projects = [
           technologiesUsed: 'Unity, C#, Github, Blender, Canva'
         }
     },
+    {
+      image: 'src/assets/Images/TimeGame.png',
+      title: 'TimeScale',
+      description: 'Juego 2D en el que el jugador debe controlar el tiempo para tener mayor control sobre su movimiento y superar obstáculos que requieren de gran precisión. Inspirado en Mario. ',
+      moreInfo: {
+        text: 'Mi rol en este proyecto fue programar el movimiento del personaje, la ralentización del tiempo y aplicar efectos visuales para darle feedback al jugador de que ha ralentizado el tiempo, programar la compatibilidad con mando, el manejo de colisiones y el manejo de los obstáculos. ',
+        team: ['Abdiel Baldonedo', 'Martín Cardoze'],
+        technologiesUsed: 'Unity, C#, Github'
+      }
+    },
   ];
   
   let currentProjectIndex = 0;
