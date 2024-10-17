@@ -309,3 +309,9 @@ li a {
         padding-top: 8px;
     }
 }
+
+/* hide the dots from the project team list items  */
+#teamList {
+    list-style-type: none;
+    padding-left: 0;
+  }
