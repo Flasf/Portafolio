@@ -134,9 +134,32 @@ footer {
     margin: 0 10px;
     text-decoration: none;
 }
+
+/* CSS media query: gets applied when the screen is smaller than 768px */
+/* That is: apply these styles for tablets and mobile phones, but not for most desktop screens. */
 @media (max-width: 768px) {
     .section {
         flex-basis: 100%;
+    }
+
+    .image-gallery {
+        flex-direction: column;
+    }
+    
+    .gallery-image {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .gallery-buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .gallery-button {
+        padding: 8px 15px;
+        font-size: 1em;
     }
 }
 
