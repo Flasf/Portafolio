@@ -187,7 +187,7 @@ footer {
     font-family: 'Nacelle', sans-serif;
     overflow: hidden; /* Ensures text doesn't spill out during animation */
     display: inline-block; /*Basically makes the cursor appear right beside the text*/
-    white-space: nowrap; /* Ensures text appears in one line */
+    white-space: wrap; /* make text wrap for responsive design */
     border-right: 2px solid; /* Creates the line for the blinking cursor effect */
     animation: blink-caret 1s linear infinite; 
 }
