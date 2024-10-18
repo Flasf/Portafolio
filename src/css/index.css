@@ -271,7 +271,23 @@ footer {
     font-size: 0.9em;
 }
 
+/* Styles for the navigation bar */
+nav {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width of the page */
+    z-index: 1000; /* Ensures navbar stays on top of other content */
+}
 
+body {
+    padding-top: 56px; /* Should match the navbar height. This pushes the entire body down by n px */
+}
+
+@media (max-width: 485px) {
+    body {
+        padding-top: 96px /* Adds more padding for smaller devices */
+    }
+}
 
 
 nav > ul {
@@ -291,6 +307,8 @@ nav > ul > li {
     align-items: center;
     height: 100%;
 }
+
+/* End of styles for the navigation bar */
 
 li a {
     display: flex;
