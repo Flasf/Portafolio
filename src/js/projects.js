@@ -51,11 +51,11 @@ const projects = [
   
     const project = projects[currentProjectIndex];
   
-    galleryImage.src = projects[currentProjectIndex].image;
-    galleryImage.alt = projects[currentProjectIndex].altText;
-    projectTitle.textContent = projects[currentProjectIndex].title;
-    projectDescription.textContent = projects[currentProjectIndex].description;
-    technologiesUsed.textContent = "Tecnologías usadas: " + projects[currentProjectIndex].moreInfo.technologiesUsed;
+    galleryImage.src = project.image;
+    galleryImage.alt = project.altText;
+    projectTitle.textContent = project.title;
+    projectDescription.textContent = project.description;
+    technologiesUsed.textContent = "Tecnologías usadas: " + project.moreInfo.technologiesUsed;
   
     // Reset the "More Info" section to hidden when switching projects
     moreInfoSection.style.display = "none";
