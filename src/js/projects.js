@@ -3,6 +3,7 @@
 const projects = [
     {
         image: 'src/assets/Images/two-eyes.png',
+        altText: 'Screenshot of Two Eyes: Two Worlds game menu',
         title: 'Two Eyes: Two Worlds',
         description: 'Videojuego en el que se experimenta con la inversión de gravedad, interacción con diferentes objetos de colores, botones, placas de presión y parkour.',
         moreInfo: {
@@ -14,6 +15,7 @@ const projects = [
     },
     {
         image: 'src/assets/Images/vrbar.png',
+        altText: 'Virtual reality scene of a bar',
         title: 'VR Bar',
         description: 'Juego de bartender en realidad virtual, sirviendo bebidas a diferentes clientes del bar.',
         moreInfo: {
@@ -24,6 +26,7 @@ const projects = [
     },
     {
       image: 'src/assets/Images/TimeGame.png',
+      altText: '2D platformer game screenshot showing a character',
       title: 'TimeScale',
       description: 'Juego 2D en el que el jugador debe controlar el tiempo para tener mayor control sobre su movimiento y superar obstáculos que requieren de gran precisión. Inspirado en Mario. ',
       moreInfo: {
@@ -49,6 +52,7 @@ const projects = [
     const project = projects[currentProjectIndex];
   
     galleryImage.src = projects[currentProjectIndex].image;
+    galleryImage.alt = projects[currentProjectIndex].altText;
     projectTitle.textContent = projects[currentProjectIndex].title;
     projectDescription.textContent = projects[currentProjectIndex].description;
     technologiesUsed.textContent = "Tecnologías usadas: " + projects[currentProjectIndex].moreInfo.technologiesUsed;
