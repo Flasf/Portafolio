@@ -117,13 +117,8 @@
     height: 47%; /* I found this values by trial and error */
     width: 120%; /* I found this values by trial and error */
     border-radius: 12px;
-    /* background-image: var(--background-image); */
     background-image: conic-gradient(from var(--angle), var(--colors));
-
-    /* background-image: conic-gradient(from var(--angle),#00bfa3,#B2ABF2, #ff4545, #ff0095, #FFD700 , #00bfa3 ); */
-    /* background-image: conic-gradient(from var(--angle), transparent 20%, #006aff); */
     /* Top and left centers the element origin, but since its origin is at the top left, we need to offset it */
-    /* Video's colors:#ff4545, #00ff99, #006aff, #ff0095, #ff4545 */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* offset */

@@ -18,7 +18,6 @@ function getRandomColorEffect() {
 }
 
 function applyRandomColorEffect() {
-    // dialogContainer.style.setProperty("--background-image", getRandomColorEffect().backgroundImage); 
     dialogContainer.style.setProperty("--colors", getRandomColorEffect().colors);
 }
 
