@@ -59,16 +59,19 @@
       <div class="container">
         <div class="content">
           <div class="section contact-form">
-            <form>
+            <form action="https://formsubmit.co/abdielr507@gmail.com" method="POST">
               <fieldset>
-                <legend>Contact Form:</legend>
-                <label for="name">Name</label><br />
+                <legend>Formulario de Contacto:</legend>
+                <label for="name">Nombre</label>
                 <input id="name" name="name" type="text" required /> <br />
 
-                <label for="email">Email</label><br />
+                <label for="email">Correo</label>
                 <input id="email" name="email" type="email" required /><br />
+
+                <label for="subject">Asunto</label>
+                <input type="subject" name="subject" id="subject" />
                 
-                <label for="message">Message</label><br />
+                <label for="message">Mensaje</label>
                 <textarea
                   id="message"
                   cols="30"
@@ -77,6 +80,11 @@
                 ></textarea
                 ><br />
                 <button class="button" type="submit" value="Submit">Submit</button>
+
+                <!-- Evita que aparezca el captcha de formsubmit -->
+                <!-- <input type="hidden" name="_next" value="contact.html" />
+                <input type="hidden" name="_captcha" value="false" /> -->
+
               </fieldset>
             </form>
           </div>
