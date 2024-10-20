@@ -39,8 +39,7 @@ function openDialog() {
 }
 
 // Execute both of this functions when the button is clicked
-button.addEventListener("click", (e) => { 
-    e.preventDefault(); // Prevent the form from submitting
+button.addEventListener("click", () => { 
     applyRandomColorEffect();
     openDialog(); 
     }
