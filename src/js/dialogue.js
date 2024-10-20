@@ -25,7 +25,9 @@ function openDialog() {
     dialog.showModal()
     
     // Show the dialog container
-    dialogContainer.style.display = "block";
+    dialogContainer.style.display = "flex";
+    dialog.style.display = "flex";
+
 
     console.log("dialog opened");
 
@@ -44,4 +46,10 @@ button.addEventListener("click", (e) => {
     }
 );
 
-button.addEventListener("click", openDialog());
+// ensures that the dialog is closed when the page is loaded
+window.addEventListener("load", () => {
+    dialog.close();
+    dialog.style.display = "none";
+    dialogContainer.style.display = "none";
+    console.log("dialog closed");
+});
