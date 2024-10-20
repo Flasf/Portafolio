@@ -79,20 +79,17 @@
                   rows="2"
                 ></textarea
                 ><br />
-                <button class="button" type="submit" value="Submit" onclick="openDialog()">Enviar</button>
+                <button class="button" type="submit" value="Submit">Enviar</button>
 
-                <!-- Evita que aparezca el captcha de formsubmit -->
-                <!-- <input type="hidden" name="_next" value="contact.html" />
-                <input type="hidden" name="_captcha" value="false" /> -->
+                <!-- Evita que aparezca el captcha de formSubmit -->
+                <input type="hidden" name="_next" value="https://flasf.github.io/Portafolio/contact.html" />
+                <input type="hidden" name="_captcha" value="false" />
 
               </fieldset>
             </form>
-            <dialog><p>Tu mensaje ha sido enviado</p></dialog>
-            <script>function openDialog() { 
-              const dialog = document.querySelector('dialog')
-              dialog.showModal()
-              setTimeout(() => dialog.close(), 2000) }
-            </script>
+            <div id="dialog-container">
+              <dialog><p>Tu mensaje ha sido enviado</p></dialog>
+            </div>
           </div>
         </div>
       </div>
@@ -121,5 +118,6 @@
       feather.replace();
     </script>
     <script src="src/js/darkmodetoggle.js"></script>
+    <script src="src/js/dialogue.js"></script>
   </body>
 </html>
