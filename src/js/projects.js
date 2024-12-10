@@ -5,7 +5,7 @@ const projects = [
         image: 'src/assets/Images/two-eyes.png',
         altText: 'Screenshot of Two Eyes: Two Worlds game menu',
         title: 'Two Eyes: Two Worlds',
-        description: 'Videojuego en el que se experimenta con la inversión de gravedad, interacción con diferentes objetos de colores, botones, placas de presión y parkour.',
+        description: 'Videojuego elaborado para una clase de la universidad en el que se experimenta con la inversión de gravedad, interacción con diferentes objetos de colores, botones, placas de presión y parkour.',
         moreInfo: {
           text: 'Mi rol en este proyecto fue programar las interacciones entre el jugador y los objetos: agarrar un objeto, presionar un botón. Esto también incluye la creación y programación de las animaciones que se activan al interactuar con los objetos.',
           team: ['Abdiel Baldonedo', 'Manuel Cabello', 'Douglas González', 'Sebastian Urbano'],
@@ -17,7 +17,7 @@ const projects = [
         image: 'src/assets/Images/vrbar.png',
         altText: 'Virtual reality scene of a bar',
         title: 'VR Bar',
-        description: 'Juego de bartender en realidad virtual, sirviendo bebidas a diferentes clientes del bar.',
+        description: 'Juego de bartender en realidad virtual, elaborado para una clase de la universidad, en el que sirves bebidas a clientes del bar.',
         moreInfo: {
           text: 'Mi rol en este proyecto fue importar el personaje que actuaría como cliente para el jugador, programar su ruta de movimiento y cómo interactuaba con las bebidas que crea el jugador. Del mismo modo, probé el videojuego con los visores Meta Quest 2 en busca de errores y feedback para el resto del equipo.',
           team: ['Abdiel Baldonedo', 'Martín Cardoze', 'Alan Cruz', 'Sebastian Urbano'],
@@ -28,7 +28,7 @@ const projects = [
       image: 'src/assets/Images/TimeGame.png',
       altText: '2D platformer game screenshot showing a character',
       title: 'TimeScale',
-      description: 'Juego 2D en el que el jugador debe controlar el tiempo para tener mayor control sobre su movimiento y superar obstáculos que requieren de gran precisión. Inspirado en Mario. ',
+      description: 'Juego 2D para una clase de la universidad en el que el jugador debe controlar el tiempo para tener mayor control sobre su movimiento y superar obstáculos que requieren de gran precisión. Inspirado en Mario. ',
       moreInfo: {
         text: 'Mi rol en este proyecto fue programar el movimiento del personaje, la ralentización del tiempo y aplicar efectos visuales para darle feedback al jugador de que ha ralentizado el tiempo, programar la compatibilidad con mando, el manejo de colisiones y el manejo de los obstáculos. ',
         team: ['Abdiel Baldonedo', 'Martín Cardoze'],
